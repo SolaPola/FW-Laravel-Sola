@@ -5,6 +5,12 @@
 </x-slot:heading> 
 
 
+@foreach ($jobs as $job)
+    <li><strong>{{ $job['title'] }}:</strong> Pays {{ $job['salary']}} per year. </li>
 
-<h1>Hello from the home page</h1>
+@endforeach
+
+
+
+
 </x-layout> 
